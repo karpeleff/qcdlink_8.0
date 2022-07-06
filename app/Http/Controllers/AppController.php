@@ -48,7 +48,7 @@ class AppController extends Controller
     {
         $page = new Page;
         $page->name = 'page2';
-        $product->user_id = 1;
+        $page->user_id = 1;
         $page->link = 'shbssdhbs';
         $page->blocks = '{"a":"b"}';
         $page->save();
