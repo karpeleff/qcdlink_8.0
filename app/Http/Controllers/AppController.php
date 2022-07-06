@@ -10,7 +10,7 @@ class AppController extends Controller
 {
     public  function  index()
     {
-        return view('welcome');
+        return view('home');
     }
 
     public  function  dashboard()
@@ -36,5 +36,30 @@ class AppController extends Controller
     {
         return  view('page');
     }
+    public function profile($id)
+    {
+        return  view('page');
+    }
+
+    public function  storePage(Request $request)
+    {
+        $page = new Page;
+        $page->name = 'page2';
+        $page->link = 'shbssdhbs';
+        $page->blocks = '{"a":"b"}';
+        $page->save();
+
+        return redirect('/editor')->with('success','страница добавлена успешно !');
+      //  return   redirect('advt/create')->with('success','Обьявление добавлено успешно !');
+
+    }
+
+    public  function editor()
+    {
+        return  view('editor');
+    }
+
+
+
 
 }

@@ -27,7 +27,11 @@ Route::middleware('auth')
         Route::get('/', [AppController::class, 'index'])->name('index');
         Route::get('/dashboard', [AppController::class, 'dashboard'])->name('dashboard');
         Route::get('/pages', [AppController::class, 'pages'])->name('pages');
+        Route::get('/editor', [AppController::class, 'editor'])->name('editor');
+        Route::post('/pages', [AppController::class, 'storePage'])->name('storepage');
         Route::get('/products', [AppController::class, 'products'])->name('products');
+        Route::get('/profile/{id}', [AppController::class, 'profile'])->name('profile');
+
 
     });
 
