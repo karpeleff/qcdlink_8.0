@@ -16,7 +16,7 @@
                     <div class="p-4 leading-normal text-left align-middle bg-transparent border-b text-size-sm whitespace-nowrap shadow-transparent">
                         <a href="{{route('editor')}}">
                             <span class="bg-gradient-red px-3.6-em text-size-xs-em rounded-1.8   py-2.2-em inline-block whitespace-nowrap
-                                             text-center align-baseline font-bold uppercase leading-none text-white">+ создать</span></a>
+                                             text-center align-baseline font-bold uppercase leading-none text-white"> + создать </span></a>
 
                     </div>
 
