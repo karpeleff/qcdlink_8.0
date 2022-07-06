@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 use App\Models\Page;
@@ -29,7 +30,9 @@ class AppController extends Controller
 
     public function products()
     {
-        return  view('products');
+        $products = Product::all();
+
+        return  view('products',compact('products'));
     }
 
     public function page($link)
@@ -53,6 +56,23 @@ class AppController extends Controller
       //  return   redirect('advt/create')->with('success','Обьявление добавлено успешно !');
 
     }
+
+    public function  storeProduct(Request $request)
+    {
+        $product = new Product;
+        $product->user_id = 1;
+        $product->name = 'autoparts';
+        $product->img = 'fff.jpg';
+        $product->old_price= 4444;
+        $product->new_price= 2224;
+        $product->save();
+
+        return redirect('/editor')->with('success','товар  добавлен успешно !');
+        //  return   redirect('advt/create')->with('success','Обьявление добавлено успешно !');
+
+    }
+
+
 
     public  function editor()
     {

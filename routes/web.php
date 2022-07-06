@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,7 +31,13 @@ Route::middleware('auth')
         Route::get('/editor', [AppController::class, 'editor'])->name('editor');
         Route::post('/pages', [AppController::class, 'storePage'])->name('storepage');
         Route::get('/products', [AppController::class, 'products'])->name('products');
+        Route::post('/products', [AppController::class, 'storeProduct'])->name('storeproduct');
         Route::get('/profile/{id}', [AppController::class, 'profile'])->name('profile');
+
+        Route::resource('media', App\Http\Controllers\MediaController::class);
+
+
+
 
 
     });

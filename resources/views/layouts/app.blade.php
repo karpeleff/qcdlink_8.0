@@ -34,6 +34,7 @@
 </head>
 
 <body class="m-0 font-sans antialiased font-normal text-size-base leading-default bg-gray-50 text-slate-500">
+<div id="app" >
 <!-- sidenav  -->
 <aside class="max-w-62.5 ease-nav-brand z-990 fixed inset-y-0 my-4 ml-4 block w-full -translate-x-full flex-wrap items-center justify-between overflow-y-auto rounded-2xl border-0 bg-white p-0 antialiased shadow-none transition-transform duration-200 xl:left-0 xl:translate-x-0 xl:bg-transparent">
     <div class="h-19.5">
@@ -139,8 +140,8 @@
                 </a>
             </li>
 
-            <!--   <li class="mt-0.5 w-full">
-                   <a class="py-2.7 text-size-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/rtl.html">
+            <li class="mt-0.5 w-full">
+                   <a class="py-2.7 text-size-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/media.index">
                        <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                            <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                <title>settings</title>
@@ -157,9 +158,9 @@
                                </g>
                            </svg>
                        </div>
-                       <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">RTL</span>
+                       <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">медиа</span>
                    </a>
-               </li>-->
+               </li>
 
             <li class="w-full mt-4">
                 <h6 class="pl-6 ml-2 font-bold leading-tight uppercase text-size-xs opacity-60">аккаунт</h6>
@@ -471,6 +472,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 <!-- plugin for charts  -->
